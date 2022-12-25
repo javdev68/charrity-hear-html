@@ -1,15 +1,15 @@
 :root{
-    --primary-color:#8261EE ;
-    --second-color: #FF589E;
+    --primary-color:#5bc1ac ;
+    --second-color: #5a6f80;
     --public-color: #fff;
-    --section-bg-color: #f9f9f9;
-    --title-section-color:#404040;
-    --text-paragraghp-color:#777;
-    --link-menu-color:#404040;
-    --border-color: #ddd;
+    --section-bg-color: #f0f8ff;
+    --title-section-color:#FF589E;
+    --text-paragraghp-color:#717275;
+    --link-menu-color:#717275;
+    --border-color: #e9eaeb;
     --border-box: 1px solid var(--border-color);
-    --border-radius: 10px;
-    --box-shadow: 0 2px 48px #0004;
+    --border-radius: 15px;
+    --box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
     --transition-time: .3s;
     /* --link-primary-color:;
      --link--second-color:;*/
@@ -53,47 +53,29 @@ textarea:focus{
 .link{
     transition: color var(--transition-time);
 }
-.link:hover{
-    color: var(--second-color);
-}
 .button__link{
     display: inline-block;
     padding: 15px 20px;
     color: var(--public-color);
-    background-color: var(--primary-color);
     border-radius: 50px;
     transition: background-color var(--transition-time);
 }
+.button__link__outline__second{
+    border: 2px solid var(--second-color);
+    color: var(--second-color);
+}
 .button__link:hover{
     color: var(--public-color);
-    background-color: var(--second-color);
-}
-.bg__primary{
-    background-color: var(--primary-color) !important;
-}
-.bg__second{
-    background-color: var(--second-color) !important;
 }
 .bg__section__color{
-    background-color: var(--bg-section-color);
+    background-color: var(--section-bg-color);
+}
+.border__radius__full{
+    border-radius:500px;
 }
 .linestrike{
     text-decoration: line-through #444;
 }
-/* menu navbar primitive style */
-.main__menu li{
-    display: inline-block;
-    margin-right: 10px;
-}
-.main__menu li:last-child{
-    margin-right: 0;
-}
-.main__menu li a{
-    padding: 10px;
-    color: var(--link-menu-color);
-    text-transform: capitalize;
-}
-
 /* section primitive style */
 .section__bg__img{
     background-size: cover;
@@ -114,17 +96,46 @@ textarea:focus{
     margin-bottom: 30px;
     color: var(--text-paragraghp-color);
 }
-.section__button{
-    background-color: var(--second-color);
-}
-.section__button:hover{
-    background-color: var(--primary-color);
-}
 .dark__bg .section__title,
-.dark__bg .section__text{
+.dark__bg .section__text,
+.dark__bg p,
+.dark__bg a,
+.dark__bg span{
     color: var(--public-color);
 }
 
+/* menu navbar primitive style */
+.main__menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.main__menu li:last-child{
+    margin-right: 0;
+}
+.main__menu li a{
+    padding: 10px;
+    color: var(--link-menu-color);
+}
+.main__menu li a:hover{
+    color: var(--primary-color);
+}
+/* primary and secondary colors */
+
+.button__link__primary,
+.button__link__second:hover,
+.bg__primary,
+.section__button:hover,
+.link:hover{
+    background-color: var(--primary-color);
+}
+
+.button__link__second,
+.button__link__primary:hover,
+.bg__second,
+.section__button,
+.link{
+    color: var(--second-color);
+}
 
 /*======================================================
 ====================== MOBILE STYLES ===================
