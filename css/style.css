@@ -136,6 +136,18 @@ textarea:focus{
 .link{
     color: var(--second-color);
 }
+/* social icons */
+.social__list{
+    display:flex;
+}
+.scial__list .scial__item a{
+    width:36px;
+    height: 36px;
+    margin-right: 15px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 36px;
+}
 
 /*======================================================
 ====================== MOBILE STYLES ===================
