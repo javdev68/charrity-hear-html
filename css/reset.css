@@ -1,0 +1,395 @@
+/* variables add in style.css */
+:root{
+    /* material color */
+    --mcyan:#2ed7df;
+    --mcyan-light:#5ceef4;
+    --mcyan-dark:#18bfc6;
+    --mblue:#245bff;
+    --mblue-light:#4a99ff;
+    --mblue-dark:#0e3cc6;
+    --mred:#ff4a4a;
+    --mred-light:#f44040 ;
+    --mred-dark:#d71e1e;
+    --mgreen:#39dd43;
+    --mgreen-light:#5dee66;
+    --myellow:#fdfa36;
+    --myellow-light:#eeec4d;
+    --mmagenta:#f91d99;
+    --mmagenta-light:#f94dae;
+    --mmagenta-dark:#d5168b;
+
+    /*Background Colors */
+    --bg-white-light:#fbfbfb;
+    --bg-white-dark:#f1f1f1;
+    --bg-gray-light:#999;
+    --bg-blue-dark:#081b55;
+    --bg-glass-white:#fff4;
+
+
+
+    --body-font-family:IRVazir;
+    /*
+        --header-bg-color:;
+        --header-menu-link-color:;
+        --header-sub-menu-link-color:;
+
+        --footer-bg-color:;
+
+        --title-page-color:;
+        --title-section-color:;
+        --title-post-color:;
+        */
+
+    /* --primary-color: ;
+     --second-color: ;
+     --public-color: ;
+     --section-bg-color: ;
+
+     /*-- other variables--*/
+    /*--primary-color:#8261EE ;
+    --second-color: #FF589E;
+    --public-color: #fff;
+    --section-bg-color: #f9f9f9;
+    --border-color: #ddd;
+    --border-box: 1px solid var(--border-color);
+    --title-section-color:#404040;
+    --text-paragraghp-color:#777;
+    --border-radius: 5px;
+    --box-shadow: 0 0 15px #0003;
+    --transition-time: .3s;*/
+}
+/* end variables */
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    padding:0;
+    margin:0;
+    outline:0;
+}
+
+
+/* font texts */
+@font-face {
+    font-family: 'IRVazir';
+    src: url('../fonts/vazir.eot') format('embedded-opentype');
+    src: url('../fonts/vazir.woff') format('woff'),
+    url('../fonts/vazir.ttf') format('truetype');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    font-family:var(--body-font-family);
+    line-height: 1;
+}
+p{
+    font-size: 16px;
+    /*text-align: justify;*/
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+a, a:hover{
+    text-decoration:none;
+    color:inherit;
+}
+ol, ul {
+    padding-right: 0;
+    list-style: none;
+}
+
+ul > li{
+    position: relative;
+}
+ul li a{
+    display:block;
+}
+ul > li > ul{
+    position: absolute;
+}
+img{
+    max-width:100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table th,
+table td{
+    padding: 15px 20px;
+    /*border:1px solid ;*/
+    text-align: center;
+}
+table thead th{
+    text-align: center;
+}
+table tbody th {
+    /*color: ;*/
+
+}
+table tbody td{
+    font-size: 1rem;
+    color: #717275;
+}
+
+table thead{
+    /*background-color: ;*/
+}
+table tbody tr:nth-child(odd){
+    /*background-color: ;*/
+}
+table tbody tr:nth-child(odd){
+    /*background-color: ;*/
+}
+input,
+button,
+textarea{
+    border:none;
+    border-radius: 7px;
+
+}
+button{
+    background-color: transparent;
+}
+input:not([type="submit"],[type="reset"]){
+    padding:10px 15px;
+}
+textarea{
+    padding: 20px;
+}
+/*======================= FONT ICONS =======================*/
+/*---- FONT AWESOME (font icons lib) ---*/
+@font-face {
+    font-family: "fontawesome";
+    src: url('../icons/fontawesome.eot') format('embedded-opentype');
+    src: url('../icons/fontawesome.woff') format('woff'),
+    url('../icons/fontawesome.ttf') format('truetype');
+}
+@font-face {
+    font-family: "fontawesome-light";
+    src: url('../icons/fontawesome-light/fa-light.eot') format('embedded-opentype');
+    src: url('../icons/fontawesome-light/fa-light.woff') format('woff'),
+    url('../icons/fontawesome-light/fa-light.ttf') format('truetype');
+}
+@font-face {
+    font-family: "fontawesome-brands";
+    src: url('../icons/fontawesome-brands/fa-brands.eot') format('embedded-opentype');
+    src: url('../icons/fontawesome-brands/fa-brands.woff') format('woff'),
+    url('../icons/fontawesome-brands/fa-brands.ttf') format('truetype');
+}
+
+.fa{
+    font-family: "fontawesome";
+}
+.fa-light {
+    font-family: "fontawesome-light";
+}
+.fab{
+    font-family: "fontawesome-brands";
+}
+.fa,
+.fa-light,
+.fab{
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+/* public icons */
+.fa-phone-volume::before,
+.fa-volume-control-phone::before {
+    content: "\f2a0";
+}
+.fa-phone-plus::before {
+    content: "\f4d2";
+}
+.fa-globe::before {
+    content: "\f0ac";
+}
+.fa-magnifying-glass::before,
+.fa-search::before {
+    content: "\f002";
+}
+.fa-add::before,
+.fa-plus::before {
+    content: "\2b";
+}
+.fa-minus::before,
+.fa-subtract::before {
+    content: "\f068";
+}
+.fa-bars::before,
+.fa-navicon::before {
+    content: "\f0c9";
+}
+.fa-close::before,
+.fa-multiply::before,
+.fa-remove::before,
+.fa-times::before,
+.fa-xmark::before {
+    content: "\f00d";
+}
+.fa-location-dot::before,
+.fa-map-marker-alt::before {
+    content: "\f3c5";
+}
+.fa-arrow-up-from-bracket::before {
+    content: "\e09a";
+}
+.fa-arrow-down-to-line::before,
+.fa-arrow-to-bottom::before {
+    content: "\f33d";
+}
+.fa-arrow-up-right-from-square::before,
+.fa-external-link::before {
+    content: "\f08e";
+}
+.fa-arrow-left::before {
+    content: "\f060";
+}
+.fa-arrow-right::before {
+    content: "\f061";
+}
+.fa-arrow-up::before {
+    content: "\f062";
+}
+.fa-arrow-down::before {
+    content: "\f063";
+}
+.fa-angle-left::before {
+    content: "\f104";
+}
+.fa-angle-right::before {
+    content: "\f105";
+}
+.fa-angle-up::before {
+    content: "\f106";
+}
+.fa-angle-down::before {
+    content: "\f107";
+}
+/* fontawesome brands */
+
+.fa-whatsapp::before {
+    content: "\f232";
+}
+.fa-instagram::before {
+    content: "\f16d";
+}
+.fa-facebook-f::before {
+    content: "\f39e";
+}
+.fa-linkedin-in::before {
+    content: "\f0e1";
+}
+.fa-pinterest-p::before {
+    content: "\f231";
+}
+.fa-youtube::before {
+    content: "\f167";
+}
+.fa-github-alt::before {
+    content: "\f113";
+}
+.fa-gitlab::before {
+    content: "\f296";
+}
+.fa-dribbble::before {
+    content: "\f17d";
+}
+.fa-figma::before {
+    content: "\f799";
+}
+.fa-linux::before {
+    content: "\f17c";
+}
+.fa-waze::before {
+    content: "\f83f";
+}
+/* fontawesome technology */
+.fa-code::before {
+    content: "\f121";
+}
+.fa-html5::before {
+    content: "\f13b";
+}
+.fa-css3-alt::before {
+    content: "\f38b";
+}
+.fa-sass::before {
+    content: "\f41e";
+}
+.fa-less::before {
+    content: "\f41d";
+}
+.fa-js::before {
+    content: "\f3b9";
+}
+.fa-bootstrap::before {
+    content: "\f836";
+}
+.fa-php::before {
+    content: "\f457";
+}
+.fa-laravel::before {
+    content: "\f3bd";
+}
+.fa-node-js::before {
+    content: "\f3d3";
+}
+.fa-vuejs::before {
+    content: "\f41f";
+}
+.fa-react::before {
+    content: "\f41b";
+}
+.fa-angular::before {
+    content: "\f420";
+}
+.fa-wordpress-simple::before {
+    content: "\f411";
+}
+.fa-joomla::before {
+    content: "\f1aa";
+}
+.fa-npm::before {
+    content: "\f3d4";
+}
+.fa-git::before {
+    content: "\f1d3";
+}
+.fa-git-alt::before {
+    content: "\f841";
+}
