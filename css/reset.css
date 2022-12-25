@@ -301,7 +301,12 @@ textarea{
     content: "\f107";
 }
 /* fontawesome brands */
-
+.fa-email::before {
+    content: "\f0e0";
+}
+.fa-telegram::before {
+    content: "\f1d8";
+}
 .fa-whatsapp::before {
     content: "\f232";
 }

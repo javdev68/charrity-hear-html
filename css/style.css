@@ -140,14 +140,29 @@ textarea:focus{
 .social__list{
     display:flex;
 }
-.scial__list .scial__item a{
-    width:36px;
-    height: 36px;
+.social__list .social__item a{
     margin-right: 15px;
     border-radius: 50px;
+    color: var(--public-color);
     text-align: center;
     line-height: 36px;
 }
+.social__list .social__item a:hover{
+    color: var(--second-color);
+}
+/*====================================================
+------------------------ STYLES ----------------------
+=====================================================*/
+#top__header{
+    padding: 5px 0;
+    background-color: var(--primary-color);
+}
+#top__header .social__col{
+    display: none;
+}
+/*---------------- main navbar -----------------*/
+
+
 
 /*======================================================
 ====================== MOBILE STYLES ===================
@@ -192,5 +207,22 @@ textarea:focus{
 
 }
 @media screen and (min-width: 768px) {
+    #top__header .info__col > div{
+        display: inline-block;
+        margin-right: 15px;
+        font-size: .9rem;
+    }
+    #top__header p{
+        margin-bottom: 0;
+        font-size: .9rem;
+    }
+    .info__icon{
+         margin-right: 5px;
+     }
+    #top__header .social__col{
+         display: block;
+     }
+
+
 
 }
