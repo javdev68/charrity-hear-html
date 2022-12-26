@@ -208,8 +208,49 @@ textarea:focus{
 .header__button:hover{
     border-color: var(--primary-color);
 }
-
-
+/*------------------ hero slider -------------*/
+.slider__col{
+    overflow: hidden;
+}
+.slider__item{
+    height: 650px;
+    position: relative;
+}
+.slider__item .slider__item__caption{
+    display: none;
+    position: absolute;
+    right: 150px;
+    bottom: 50px;
+    padding: 10px;
+    background-color: var(--public-color);
+}
+.slider__item__caption .slider__item__title{
+    font-size: 5rem;
+}
+/* slick slider */
+.slick-slider .slick-arrow{
+    display: none;
+    z-index: 50;
+}
+.slick-slider .slick-next {
+    right: 100px;
+}
+.slick-slider .slick-prev {
+    left: 100px;
+}
+.slick-slider .slick-arrow:before{
+    display: block;
+     width: 50px;
+     height: 50px;
+     padding: 10px;
+     border-radius: 500px;
+     background-color: var(--second-color);
+     font-size: 2rem;
+    line-height: 25px;
+ }
+.slick-slider .slick-arrow:hover:before{
+    background-color: var(--primary-color);
+}
 
 
 /*======================================================
@@ -251,6 +292,10 @@ textarea:focus{
 .main__navbar{
     display: flex;
 }
+    .slider__item .slider__item__caption,
+    .slick-slider .slick-arrow{
+        display: block;
+    }
 
 }
 @media screen and (max-width: 991px){
