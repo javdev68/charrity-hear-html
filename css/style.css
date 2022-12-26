@@ -51,6 +51,7 @@ textarea:focus{
     padding-bottom: 100px;
 }
 .link{
+    color: var(--second-color);
     transition: color var(--transition-time);
 }
 .button__link{
@@ -72,6 +73,12 @@ textarea:focus{
 }
 .border__radius__full{
     border-radius:500px;
+}
+.text__primary{
+    color: var(--primary-color);
+}
+.text__second{
+    color: var(--second-color);
 }
 .linestrike{
     text-decoration: line-through #444;
@@ -120,7 +127,6 @@ textarea:focus{
     color: var(--primary-color);
 }
 /* primary and secondary colors */
-
 .button__link__primary,
 .button__link__second:hover,
 .bg__primary,
@@ -128,13 +134,12 @@ textarea:focus{
 .link:hover{
     background-color: var(--primary-color);
 }
-
+.text__second,
 .button__link__second,
 .button__link__primary:hover,
 .bg__second,
-.section__button,
-.link{
-    color: var(--second-color);
+.section__button, {
+    background-color: var(--second-color);
 }
 /* social icons */
 .social__list{
@@ -160,10 +165,29 @@ textarea:focus{
 #top__header .social__col{
     display: none;
 }
-/*---------------- main navbar -----------------*/
-
-
-
+/*---------------- main header -----------------*/
+#header{
+    padding: 10px 0;
+}
+.logo{
+    width: 270px;
+}
+.logo img{
+    width: 80px;
+    margin-right: 10px;
+}
+.logo .logo__title h1{
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.logo .logo__title small{
+    font-size: .8rem;
+}
+.logo:hover .logo__title h1,
+.logo .logo__title small{
+    color: var(--second-color);
+}
 /*======================================================
 ====================== MOBILE STYLES ===================
 ======================================================*/
