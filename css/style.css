@@ -56,7 +56,7 @@ textarea:focus{
 }
 .button__link{
     display: inline-block;
-    padding: 15px 20px;
+    padding: 12px 25px;
     color: var(--public-color);
     border-radius: 50px;
     transition: background-color var(--transition-time);
@@ -82,6 +82,21 @@ textarea:focus{
 }
 .linestrike{
     text-decoration: line-through #444;
+}
+/* primary and secondary colors */
+.button__link__primary,
+.button__link__second:hover,
+.button__link__outline__second:hover,
+.bg__primary,
+.section__button:hover,
+.link:hover{
+    background-color: var(--primary-color);
+}
+.button__link__second,
+.button__link__primary:hover,
+.bg__second,
+.section__button {
+    background-color: var(--second-color);
 }
 /* section primitive style */
 .section__bg__img{
@@ -112,34 +127,19 @@ textarea:focus{
 }
 
 /* menu navbar primitive style */
-.main__menu li{
+.nav__menu li{
     display: inline-block;
     margin-right: 10px;
 }
-.main__menu li:last-child{
+.nav__menu li:last-child{
     margin-right: 0;
 }
-.main__menu li a{
+.nav__menu li a{
     padding: 10px;
     color: var(--link-menu-color);
 }
-.main__menu li a:hover{
+.nav__menu li a:hover{
     color: var(--primary-color);
-}
-/* primary and secondary colors */
-.button__link__primary,
-.button__link__second:hover,
-.bg__primary,
-.section__button:hover,
-.link:hover{
-    background-color: var(--primary-color);
-}
-.text__second,
-.button__link__second,
-.button__link__primary:hover,
-.bg__second,
-.section__button, {
-    background-color: var(--second-color);
 }
 /* social icons */
 .social__list{
@@ -162,12 +162,17 @@ textarea:focus{
     padding: 5px 0;
     background-color: var(--primary-color);
 }
+#top__header p{
+    margin-bottom: 5px;
+    font-size: .9rem;
+}
 #top__header .social__col{
     display: none;
 }
 /*---------------- main header -----------------*/
 #header{
     padding: 10px 0;
+    box-shadow: var(--box-shadow);
 }
 .logo{
     width: 270px;
@@ -182,12 +187,31 @@ textarea:focus{
     font-weight: 700;
 }
 .logo .logo__title small{
-    font-size: .8rem;
+    font-size: .7rem;
+    text-transform: uppercase;
 }
 .logo:hover .logo__title h1,
 .logo .logo__title small{
     color: var(--second-color);
 }
+/*--- navbar main menu ---*/
+.main__navbar{
+    display: none;
+}
+.nav__menu{
+    margin-right: 15px;
+}
+ li a{
+    text-transform:capitalize;
+}
+/* header button */
+.header__button:hover{
+    border-color: var(--primary-color);
+}
+
+
+
+
 /*======================================================
 ====================== MOBILE STYLES ===================
 ======================================================*/
@@ -224,7 +248,9 @@ textarea:focus{
 
 ========================================================== */
 @media screen and (min-width: 992px){
-
+.main__navbar{
+    display: flex;
+}
 
 }
 @media screen and (max-width: 991px){
