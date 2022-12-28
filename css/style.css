@@ -3,7 +3,7 @@
     --second-color: #5a6f80;
     --public-color: #fff;
     --section-bg-color: #f0f8ff;
-    --title-section-color:#FF589E;
+    --title-section-color:#5a6f80;
     --text-paragraghp-color:#717275;
     --link-menu-color:#717275;
     --border-color: #e9eaeb;
@@ -125,7 +125,12 @@ textarea:focus{
 .dark__bg span{
     color: var(--public-color);
 }
-
+/* card box */
+.card__box{
+    padding: 20px;
+    border-radius:var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
 /* menu navbar primitive style */
 .nav__menu li{
     display: inline-block;
@@ -171,8 +176,10 @@ textarea:focus{
 }
 /*---------------- main header -----------------*/
 #header{
+    position: relative;
     padding: 10px 0;
     box-shadow: var(--box-shadow);
+    z-index: 9999;
 }
 .logo{
     width: 270px;
@@ -251,7 +258,25 @@ textarea:focus{
 .slick-slider .slick-arrow:hover:before{
     background-color: var(--primary-color);
 }
-
+/*---------------------- features -------------*/
+.feature__card{
+    padding: 0;
+}
+.feature__card > a{
+    display: block;
+    padding: 30px;
+    text-align: center;
+}
+.feature__card > a img{
+    margin-bottom: 20px;
+    transition:transform var(--transition-time);
+}
+.feature__card > a:hover img{
+    transform:scale(0.8);
+}
+.feature__card > a p{
+    font-size: 1.3rem;
+}
 
 /*======================================================
 ====================== MOBILE STYLES ===================
@@ -292,7 +317,7 @@ textarea:focus{
 .main__navbar{
     display: flex;
 }
-    .slider__item .slider__item__caption,
+    /*.slider__item .slider__item__caption,*/
     .slick-slider .slick-arrow{
         display: block;
     }
