@@ -165,15 +165,27 @@ textarea:focus{
     display:flex;
 }
 .social__list .social__item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 15px;
     border-radius: 50px;
     color: var(--public-color);
-    text-align: center;
-    line-height: 36px;
+}
+.social__list__solid .social__item a{
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    background: var(--second-color);
 }
 .social__list .social__item a:hover{
     color: var(--second-color);
 }
+.social__list__solid .social__item a:hover{
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
 /*====================================================
 ------------------------ STYLES ----------------------
 =====================================================*/
@@ -222,7 +234,7 @@ textarea:focus{
 .nav__menu{
     margin-right: 15px;
 }
- li a{
+li a{
     text-transform:capitalize;
 }
 /* header button */
@@ -270,9 +282,9 @@ textarea:focus{
 }
 .slick-slider .slick-arrow:before{
     display: block;
-     font-size: 2rem;
+    font-size: 2rem;
     line-height: 25px;
- }
+}
 /*---------------------- features -------------*/
 .feature__card{
     padding: 0;
@@ -344,6 +356,17 @@ textarea:focus{
 .about__counter .counter__number{
     font-size: 2.5rem;
 }
+/* about member */
+.member__img img{
+    width: 400px;
+}
+.member__content .member__name{
+    margin-bottom: 0;
+}
+.member__desc{
+    margin-bottom: 30px;
+}
+
 
 /*======================================================
 ====================== MOBILE STYLES ===================
@@ -381,14 +404,16 @@ textarea:focus{
 
 ========================================================== */
 @media screen and (min-width: 992px){
-.main__navbar{
-    display: flex;
-}
+    .main__navbar{
+        display: flex;
+    }
     .slider__item .slider__item__caption,
     .slick-slider .slick-arrow{
         display: block;
     }
-
+.member__img{
+    text-align: right;
+}
 }
 @media screen and (max-width: 991px){
 
@@ -404,11 +429,11 @@ textarea:focus{
         font-size: .9rem;
     }
     .info__icon{
-         margin-right: 5px;
-     }
+        margin-right: 5px;
+    }
     #top__header .social__col{
-         display: block;
-     }
+        display: block;
+    }
     .slick-slider .slick-arrow{
         display: block;
     }
