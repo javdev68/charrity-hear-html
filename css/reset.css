@@ -213,7 +213,7 @@ textarea{
 .fa{
     font-family: "fontawesome";
 }
-.fa-light {
+.fa-light{
     font-family: "fontawesome-light";
 }
 .fab{
@@ -253,6 +253,9 @@ textarea{
 .fa-bars::before,
 .fa-navicon::before {
     content: "\f0c9";
+}
+.fa-check::before {
+    content: "\f00c";
 }
 .fa-close::before,
 .fa-multiply::before,

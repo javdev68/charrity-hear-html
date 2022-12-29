@@ -8,16 +8,19 @@
     --link-menu-color:#717275;
     --border-color: #e9eaeb;
     --border-box: 1px solid var(--border-color);
-    --border-radius: 15px;
+    --border-radius: 20px;
     --box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
     --transition-time: .3s;
     /* --link-primary-color:;
      --link--second-color:;*/
 }
 p{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: var(--text-paragraghp-color);
     line-height: 1.6;
+}
+p:last-child{
+    margin-bottom: 0;
 }
 input,
 textarea,
@@ -68,9 +71,6 @@ textarea:focus{
 .button__link:hover{
     color: var(--public-color);
 }
-.bg__section__color{
-    background-color: var(--section-bg-color);
-}
 .border__radius__full{
     border-radius:500px;
 }
@@ -99,6 +99,9 @@ textarea:focus{
     background-color: var(--second-color);
 }
 /* section primitive style */
+.section__bg__color{
+    background-color: var(--section-bg-color);
+}
 .section__bg__img{
     background-size: cover;
     background-position: center;
@@ -128,8 +131,19 @@ textarea:focus{
 /* card box */
 .card__box{
     padding: 20px;
+    background-color: #fff;
     border-radius:var(--border-radius);
     box-shadow: var(--box-shadow);
+}
+.card__title{
+    font-size: 3rem;
+}
+.card__subtitle{
+    font-size: 1.4rem;
+}
+.card__title,
+.card__subtitle{
+    margin-bottom: 20px;
 }
 /* menu navbar primitive style */
 .nav__menu li{
@@ -254,7 +268,6 @@ textarea:focus{
 .slick-slider:hover .slick-arrow{
     opacity:.8;
 }
-
 .slick-slider .slick-arrow:before{
     display: block;
      font-size: 2rem;
@@ -263,6 +276,7 @@ textarea:focus{
 /*---------------------- features -------------*/
 .feature__card{
     padding: 0;
+    margin-bottom: 30px;
 }
 .feature__card > a{
     display: block;
@@ -277,7 +291,58 @@ textarea:focus{
     transform:scale(0.8);
 }
 .feature__card > a p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+}
+/*--------------------- about ---------------------*/
+.about__img__col{
+    margin-bottom: 30px;
+}
+.box__image,
+.box__image img{
+    height: 100%;
+}
+.box__image img{
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    object-fit: cover;
+}
+.about__desc__card{
+    margin-bottom: 30px;
+}
+.about__list li{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: var(--text-paragraghp-color);
+}
+.about__list li::before{
+    content:"\f00c";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 25px;
+    color: var(--second-color);
+    background-color: var(--section-bg-color);
+    font-family: "fontawesome-light";
+}
+/* counter box */
+.about__counter{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.about__counter span{
+    display: block;
+    margin-bottom: 15px;
+}
+.about__counter span:last-child{
+    margin: 0;
+}
+.about__counter .counter__number{
+    font-size: 2.5rem;
 }
 
 /*======================================================

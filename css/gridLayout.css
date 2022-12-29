@@ -184,6 +184,10 @@
         max-width:83.3333%;
         flex-basis:83.3333%;
     }
+    .column__lg__6{
+        max-width:50%;
+        flex-basis:50%;
+    }
 
 }
 @media screen and (min-width: 1200px){
