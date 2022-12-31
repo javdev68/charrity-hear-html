@@ -54,8 +54,12 @@ textarea:focus{
     padding-bottom: 100px;
 }
 .link{
+    display: inline-block;
     color: var(--second-color);
     transition: color var(--transition-time);
+}
+.link:hover{
+    color: var(--primary-color);
 }
 .button__link{
     display: inline-block;
@@ -88,8 +92,7 @@ textarea:focus{
 .button__link__second:hover,
 .button__link__outline__second:hover,
 .bg__primary,
-.section__button:hover,
-.link:hover{
+.section__button:hover{
     background-color: var(--primary-color);
 }
 .button__link__second,
@@ -112,6 +115,7 @@ textarea:focus{
     text-align: center;
 }
 .section__title{
+    position: relative;
     font-size: 1.8rem;
     line-height: 1.8;
     color: var(--title-section-color);
@@ -168,13 +172,13 @@ textarea:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 32px;
+    height: 32px;
     margin-right: 15px;
     border-radius: 50px;
     color: var(--public-color);
 }
 .social__list__solid .social__item a{
-    width: 32px;
-    height: 32px;
     color: #fff;
     background: var(--second-color);
 }
@@ -366,6 +370,41 @@ li a{
 .member__desc{
     margin-bottom: 30px;
 }
+/*---------------- call to action --------------*/
+.cta__section{
+    position: relative;
+    overflow: hidden;
+    background-image: url("../images/bgchat.png");
+}
+.cta__section::before,
+.cta__section::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 500px;
+}
+.cta__section::before{
+    top: -20px;
+    left: -50px;
+    background-color: var(--primary-color);
+}
+.cta__section::after{
+    right: 100px;
+    bottom: -140px;
+    border: 30px solid var(--second-color);
+    background-color: transparent;
+}
+.cta__title{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.cta__link:first-child{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 
 
 /*======================================================
@@ -411,9 +450,9 @@ li a{
     .slick-slider .slick-arrow{
         display: block;
     }
-.member__img{
-    text-align: right;
-}
+    .member__img{
+        text-align: right;
+    }
 }
 @media screen and (max-width: 991px){
 

@@ -180,14 +180,19 @@
     .wrapper{
         max-width: 960px;
     }
-    .column__lg__10{
-        max-width:83.3333%;
-        flex-basis:83.3333%;
+    .column__lg__4{
+        max-width:33.333%;
+        flex-basis:33.333%;
     }
     .column__lg__6{
         max-width:50%;
         flex-basis:50%;
     }
+    .column__lg__10{
+        max-width:83.3333%;
+        flex-basis:83.3333%;
+    }
+
 
 }
 @media screen and (min-width: 1200px){
