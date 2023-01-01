@@ -22,6 +22,9 @@ p{
 p:last-child{
     margin-bottom: 0;
 }
+strong{
+    font-weight: bold;
+}
 input,
 textarea,
 button{
@@ -49,10 +52,25 @@ input:focus,
 textarea:focus{
     border-color: #80bdff;
 }
+/* spacing */
 .inner_space_y{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.p_20{
+    padding: 20px;
+}
+.mb_20{
+    margin-bottom: 20px;
+}
+.mb_30{
+    margin-bottom: 30px;
+}
+.my_20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* link and button */
 .link{
     display: inline-block;
     color: var(--second-color);
@@ -68,22 +86,24 @@ textarea:focus{
     border-radius: 50px;
     transition: background-color var(--transition-time);
 }
+.button__link:hover{
+     color: var(--public-color);
+ }
 .button__link__outline__second{
     border: 2px solid var(--second-color);
     color: var(--second-color);
 }
-.button__link:hover{
-    color: var(--public-color);
-}
-.border__radius__full{
-    border-radius:500px;
-}
+
+/* other styles */
 .text__primary{
     color: var(--primary-color);
 }
 .text__second{
     color: var(--second-color);
 }
+.border__radius__full{
+     border-radius:500px;
+ }
 .linestrike{
     text-decoration: line-through #444;
 }
@@ -117,7 +137,7 @@ textarea:focus{
 .section__title{
     position: relative;
     font-size: 1.8rem;
-    line-height: 1.8;
+    line-height: 1.2;
     color: var(--title-section-color);
 }
 .section__text{
@@ -137,6 +157,8 @@ textarea:focus{
     padding: 20px;
     background-color: #fff;
     border-radius:var(--border-radius);
+}
+.card__box__shadow{
     box-shadow: var(--box-shadow);
 }
 .card__title{
@@ -405,6 +427,30 @@ li a{
     margin-right: 10px;
     margin-bottom: 10px;
 }
+/*---------------- causses donation --------------*/
+.donation__card{
+    padding: 0;
+    box-shadow: 0 10px 15px #5a6f8020;
+overflow:hidden;
+}
+.donation__progress{
+    width: 100%;
+    background-color: var(--border-color);
+}
+.donation__progress__bar{
+    height: 5px;
+}
+.donation__btn{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+.donation__card:hover{
+    box-shadow: var(--box-shadow);
+}
+
+
 
 
 /*======================================================

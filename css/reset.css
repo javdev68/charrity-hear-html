@@ -122,7 +122,6 @@ q:before, q:after {
 }
 a, a:hover{
     text-decoration:none;
-    color:inherit;
 }
 ol, ul {
     padding-right: 0;
