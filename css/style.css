@@ -9,6 +9,7 @@
     --border-color: #e9eaeb;
     --border-box: 1px solid var(--border-color);
     --border-radius: 20px;
+    --border-radius-form: 10px;
     --box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
     --transition-time: .3s;
     /* --link-primary-color:;
@@ -25,12 +26,19 @@ p:last-child{
 strong{
     font-weight: bold;
 }
+/* form */
 input,
 textarea,
 button{
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-form);
 }
-
+input,
+textarea,
+label{
+    width: 100%;
+    color: var(--text-paragraghp-color);
+    font-size: 1rem;
+}
 input,
 textarea{
     border: 2px solid transparent;
@@ -52,6 +60,30 @@ input:focus,
 textarea:focus{
     border-color: #80bdff;
 }
+.input__file{
+    position: relative;
+    height: 50px;
+    padding: 10px 15px;
+    border-radius: var(--border-radius-form);
+}
+.input__file [type="file"]{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+.input__file label{
+    cursor:pointer;
+}
+.button__link[type="submit"]{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    cursor:pointer;
+}
+.form__title{
+    font-size: 1.7rem;
+}
 /* spacing */
 .inner_space_y{
     padding-top: 100px;
@@ -59,6 +91,9 @@ textarea:focus{
 }
 .p_20{
     padding: 20px;
+}
+.p_40{
+    padding: 40px !important;
 }
 .mb_20{
     margin-bottom: 20px;
@@ -132,7 +167,6 @@ textarea:focus{
 }
 .section__header{
     margin-bottom: 50px;
-    text-align: center;
 }
 .section__title{
     position: relative;
@@ -449,6 +483,7 @@ overflow:hidden;
 .donation__card:hover{
     box-shadow: var(--box-shadow);
 }
+/*-------------------- volunteer -----------*/
 
 
 
