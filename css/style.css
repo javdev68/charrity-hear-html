@@ -345,6 +345,30 @@ li a{
     font-size: 2rem;
     line-height: 25px;
 }
+/* section shapes */
+.bg__shape{
+    position: relative;
+    overflow: hidden;
+}
+.bg__shape::before,
+.bg__shape::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 500px;
+}
+.bg__shape::before{
+    top: -20px;
+    left: -50px;
+    background-color: var(--primary-color);
+}
+.bg__shape::after{
+    right: 100px;
+    bottom: -140px;
+    border: 30px solid var(--second-color);
+    background-color: transparent;
+}
 /*---------------------- features -------------*/
 .feature__card{
     padding: 0;
@@ -428,28 +452,8 @@ li a{
 }
 /*---------------- call to action --------------*/
 .cta__section{
-    position: relative;
     overflow: hidden;
     background-image: url("../images/bgchat.png");
-}
-.cta__section::before,
-.cta__section::after{
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 500px;
-}
-.cta__section::before{
-    top: -20px;
-    left: -50px;
-    background-color: var(--primary-color);
-}
-.cta__section::after{
-    right: 100px;
-    bottom: -140px;
-    border: 30px solid var(--second-color);
-    background-color: transparent;
 }
 .cta__title{
     margin-bottom: 20px;
@@ -484,6 +488,9 @@ overflow:hidden;
     box-shadow: var(--box-shadow);
 }
 /*-------------------- volunteer -----------*/
+#volunteer::after{
+    border-color: var(--primary-color);
+}
 .volunteer__col{
     text-align: center;
 }
@@ -495,7 +502,7 @@ overflow:hidden;
 .volunteer__image img{
     border-radius: 500px;
 }
-
+/*----------------- blog posts ---------------*/
 
 
 /*======================================================
