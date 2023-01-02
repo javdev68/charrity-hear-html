@@ -484,7 +484,17 @@ overflow:hidden;
     box-shadow: var(--box-shadow);
 }
 /*-------------------- volunteer -----------*/
-
+.volunteer__col{
+    text-align: center;
+}
+.volunteer__image{
+    width: 300px;
+    height: 300px;
+    margin:0 auto 40px;
+}
+.volunteer__image img{
+    border-radius: 500px;
+}
 
 
 

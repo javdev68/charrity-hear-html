@@ -26,6 +26,9 @@
 .d__flex{
     display:flex;
 }
+.f__wrap{
+    flex-wrap: wrap;
+}
 .a_i_center{
     align-items: center;
 }
