@@ -552,6 +552,21 @@ overflow:hidden;
 .post__title a{
     color: #444;
 }
+/* sidebar post blogs */
+.side__search__box{
+    position: relative;
+    padding-right: 50px;
+    border-radius: 10px;
+}
+.side__search__box input{
+    background-color: transparent;
+}
+.side__search__box .search__icon{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 1.2rem;
+}
 
 /*======================================================
 ====================== MOBILE STYLES ===================
