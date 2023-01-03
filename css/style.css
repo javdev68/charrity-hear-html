@@ -142,6 +142,9 @@ textarea:focus{
 }
 
 /* other styles */
+.text__color{
+    color: var(--text-paragraghp-color);
+}
 .text__primary{
     color: var(--primary-color);
 }
@@ -257,7 +260,19 @@ textarea:focus{
     color: #fff;
     background-color: var(--primary-color);
 }
-
+/* badges */
+.badges{
+    padding: 1px 9px;
+    color: var(--public-color);
+    font-size: .7rem;
+    border-radius:50px;
+}
+.badges__primary{
+    background-color: var(--primary-color);
+}
+.badges__second{
+    background-color: var(--second-color);
+}
 /*====================================================
 ------------------------ STYLES ----------------------
 =====================================================*/
@@ -566,6 +581,22 @@ overflow:hidden;
     right: 15px;
     top: 15px;
     font-size: 1.2rem;
+}
+/* sidebar widget styles */
+.widget__title{
+    font-size: 1.7rem;
+}
+.widget__post__image{
+    width: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.widget__post__meta{
+    color: var(--text-paragraghp-color);
+}
+.widget__list__link{
+    margin-bottom: 20px;
 }
 
 /*======================================================
