@@ -15,6 +15,18 @@
     /* --link-primary-color:;
      --link--second-color:;*/
 }
+h1{
+    font-size: 2.2rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.7rem;
+}
+h4{
+    font-size: 1.3rem;
+}
 p{
     margin-bottom: 20px;
     color: var(--text-paragraghp-color);
@@ -170,7 +182,7 @@ textarea:focus{
 }
 .section__title{
     position: relative;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.2;
     color: var(--title-section-color);
 }
@@ -503,7 +515,43 @@ overflow:hidden;
     border-radius: 500px;
 }
 /*----------------- blog posts ---------------*/
+.post__card{
 
+}
+.post__card .post__top{
+    position: relative;
+    border-radius:var(--border-radius);
+    overflow: hidden;
+}
+.post__top .post__tags_block{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.post__top .post__tags_block a{
+    position: relative;
+    margin-right: 15px;
+    color: #fff;
+}
+.post__top .post__tags_block a:hover{
+    color: var(--primary-color);
+}
+.post__top .post__tags_block a::after{
+    content: ',';
+}
+.post__top .post__tags_block a:last-child:after{
+    display: none;
+}
+.post__meta{
+    margin-right: 20px;
+    color: var(--text-paragraghp-color);
+}
+.post__meta i{
+    margin-right: 5px;
+}
+.post__title a{
+    color: #444;
+}
 
 /*======================================================
 ====================== MOBILE STYLES ===================

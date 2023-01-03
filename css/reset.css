@@ -227,6 +227,9 @@ textarea{
     text-rendering: auto;
 }
 /* public icons */
+.fa-user::before {
+    content: "\f007";
+}
 .fa-phone-volume::before,
 .fa-volume-control-phone::before {
     content: "\f2a0";
@@ -236,6 +239,13 @@ textarea{
 }
 .fa-globe::before {
     content: "\f0ac";
+}
+.fa-calendar::before {
+    content: "\f133";
+}
+.fa-comment-alt::before,
+.fa-message::before {
+    content: "\f27a";
 }
 .fa-magnifying-glass::before,
 .fa-search::before {

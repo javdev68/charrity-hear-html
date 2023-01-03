@@ -76,19 +76,18 @@
     max-width:33.333%;
     flex-basis:33.333%;
 }
-/*
 .column__5{
     max-width:41.6666%;
     flex-basis:41.6666%;
-}*/
+}
 .column__6{
     max-width:50%;
     flex-basis:50%;
 }
-/*.column__7{
+.column__7{
     max-width:58.3333%;
     flex-basis:58.3333%;
-}*/
+}
 .column__8{
     max-width:66.6666%;
     flex-basis:66.6666%;
@@ -187,9 +186,17 @@
         max-width:33.333%;
         flex-basis:33.333%;
     }
+    .column__lg__5{
+        max-width:41.6666%;
+        flex-basis:41.6666%;
+    }
     .column__lg__6{
         max-width:50%;
         flex-basis:50%;
+    }
+    .column__lg__7{
+        max-width:58.3333%;
+        flex-basis:58.3333%;
     }
     .column__lg__10{
         max-width:83.3333%;
