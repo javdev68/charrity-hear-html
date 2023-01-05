@@ -598,7 +598,12 @@ overflow:hidden;
 .widget__list__link{
     margin-bottom: 20px;
 }
-
+.widget__tags .tags{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: .8rem;
+    border-width:1px;
+}
 /*======================================================
 ====================== MOBILE STYLES ===================
 ======================================================*/
