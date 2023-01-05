@@ -610,6 +610,13 @@ overflow:hidden;
     color: var(--public-color);
     font-size: 1.1rem;
 }
+.widget__list .widget__list__item{
+    margin-bottom: 15px;
+}
+.widget__list .widget__list__item a{
+
+}
+
 /*======================================================
 ====================== MOBILE STYLES ===================
 ======================================================*/
