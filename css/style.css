@@ -604,6 +604,12 @@ overflow:hidden;
     font-size: .8rem;
     border-width:1px;
 }
+/*----------------- Footer -------------*/
+.contact__list .contact__item{
+    margin-bottom: 15px;
+    color: var(--public-color);
+    font-size: 1.1rem;
+}
 /*======================================================
 ====================== MOBILE STYLES ===================
 ======================================================*/
