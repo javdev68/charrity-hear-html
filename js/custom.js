@@ -1,5 +1,13 @@
 $(document).ready(function ($){
 
+    /* mobile navbar */
+    $('.btn__navbar__toggle').on('click', function(){
+        $('.mobile__navbar').css('left', 0);
+    })
+   $('.btn__navbar__close').on('click', function(){
+        $('.mobile__navbar').css('left', -300);
+    })
+
     /* slick slider */
     $('.slider__wrapper').slick({
         autoplay: true,
